@@ -1,5 +1,5 @@
 body {
-  background-color: rebeccapurple;
+  background-color: #d6eef8;
   overflow: hidden;
 }
 div {
@@ -42,7 +42,6 @@ button {
 button:hover,
 button:active {
   cursor: pointer;
-  border: 2px #ccc solid;
 }
 button:active {
   transform: scale(0.9);
