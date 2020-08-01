@@ -1,0 +1,137 @@
+body {
+  background-color: rebeccapurple;
+  overflow: hidden;
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#start-text,
+#end-text {
+  transition: opacity 0.5s ease;
+}
+#end-text {
+  opacity: 0;
+}
+#end-text i {
+  color: #11c72f;
+  font-weight: bold;
+  transition: all 0.5s 0.5s ease;
+}
+.fade-out {
+  opacity: 0;
+}
+.fade-in {
+  opacity: 1 !important;
+}
+button {
+  position: absolute;
+  overflow: hidden !important;
+  height: 100px;
+  width: 300px;
+  padding: 0;
+  background-color: #1b1e28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+  border: 2px #ccc solid;
+}
+button:active,
+button:focus {
+  outline: none;
+  border: none;
+}
+button span {
+  color: #fff;
+  font-weight: 300;
+  font-size: large;
+  position: absolute;
+}
+svg {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  z-index: 1;
+}
+#Truck {
+  transition: transform 2s;
+}
+#Box {
+  transition: transform 2s;
+}
+.cls-1 {
+  fill: #2d48ff;
+}
+.cls-2 {
+  fill: #1a2021;
+}
+.cls-3 {
+  fill: #333;
+}
+.cls-4 {
+  fill: #7486ff;
+}
+.cls-5 {
+  fill: url(#radial-gradient);
+}
+.cls-6 {
+  fill: url(#radial-gradient-2);
+}
+.cls-7 {
+  fill: #dfda96;
+}
+.door {
+  fill: #fff;
+}
+.cls-9 {
+  fill: url(#linear-gradient);
+}
+.box-cls-1 {
+  fill: url(#box-linear-gradient);
+}
+#top-door {
+  transition: transform 1s ease;
+}
+#bottom-door {
+  transition: transform 1s 0.2s ease;
+}
+#lights {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+#lights.lights-on {
+  opacity: 1;
+}
+.road {
+  height: 1px;
+  border-bottom: 3px #eee dashed;
+  width: 150%;
+  opacity: 0;
+  transform: translate(100%);
+  transition: transform 5s linear, opacity 1s ease;
+}
+.road.show {
+  opacity: 1;
+  transform: translate(0);
+}
+.road.hide {
+  opacity: 0 !important;
+}
+.moving-road {
+  animation: movingRoad 0.15s linear infinite;
+}
+@keyframes movingRoad {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-10px);
+  }
+}

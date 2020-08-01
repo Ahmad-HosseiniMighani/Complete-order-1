@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Truck and box (Ahmad HM)</title>
+  </head>
+  <body>
+    <div>
+      <button onclick="handleClick()">
+        <span class="road"></span>
+        <span id="start-text">Complete Order</span>
+        <span id="end-text">Order Placed <i class="bx bx-check"></i></span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 1677 549.93"
+          id="truck-svg"
+        >
+          <defs>
+            <linearGradient
+              id="box-linear-gradient"
+              x1="144.5"
+              x2="144.5"
+              y2="289"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0.29" stop-color="#ecd3a3" />
+              <stop offset="0.37" stop-color="#ead1a1" />
+              <stop offset="0.4" stop-color="#e5cc9a" />
+              <stop offset="0.42" stop-color="#dac18f" />
+              <stop offset="0.44" stop-color="#ccb37e" />
+              <stop offset="0.45" stop-color="#b9a068" />
+              <stop offset="0.46" stop-color="#ab9257" />
+              <stop offset="0.47" stop-color="#ab9257" />
+              <stop offset="0.53" stop-color="#ab9257" />
+              <stop offset="0.53" stop-color="#b9a067" />
+              <stop offset="0.54" stop-color="#cbb27d" />
+              <stop offset="0.55" stop-color="#dac18e" />
+              <stop offset="0.56" stop-color="#e4cb99" />
+              <stop offset="0.57" stop-color="#e9d0a0" />
+              <stop offset="0.6" stop-color="#ebd2a2" />
+              <stop offset="0.76" stop-color="#dec796" />
+              <stop offset="1" stop-color="#c2ae7c" />
+            </linearGradient>
+            <radialGradient
+              id="radial-gradient"
+              cx="1189.81"
+              cy="387.99"
+              r="469.81"
+              gradientTransform="translate(0 165.75) scale(1 0.61)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0.11" stop-color="#eedd82" />
+              <stop offset="0.25" stop-color="#eedd82" stop-opacity="0.52" />
+              <stop offset="0.38" stop-color="#eedd82" stop-opacity="0.3" />
+              <stop offset="0.91" stop-color="#eedd82" stop-opacity="0" />
+            </radialGradient>
+            <radialGradient
+              id="radial-gradient-2"
+              cx="1189.81"
+              cy="179.7"
+              r="469.81"
+              gradientTransform="translate(0 42.69) scale(1 0.61)"
+              xlink:href="#radial-gradient"
+            />
+            <linearGradient
+              id="linear-gradient"
+              x1="560"
+              y1="516.97"
+              x2="560"
+              y2="33.97"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#bdccd4" />
+              <stop offset="0.1" stop-color="#cdd8de" />
+              <stop offset="0.28" stop-color="#e3e9ed" />
+              <stop offset="0.47" stop-color="#f3f6f7" />
+              <stop offset="0.69" stop-color="#fcfdfd" />
+              <stop offset="1" stop-color="#fff" />
+            </linearGradient>
+          </defs>
+          <g id="Box" transform="translate(-1500)">
+            <rect
+              class="box-cls-1"
+              width="289"
+              height="289"
+              transform="translate(0 120)"
+            />
+          </g>
+          <g id="Truck" transform="translate(3000)">
+            <g id="truck-body">
+              <g id="Body">
+                <path
+                  id="truck-2"
+                  data-name="truck"
+                  class="cls-1"
+                  d="M920,34h182a100,100,0,0,1,100,100V417a100,100,0,0,1-100,100H920a10,10,0,0,1-10-10V44a10,10,0,0,1,10-10Z"
+                />
+                <rect
+                  id="attachment"
+                  class="cls-1"
+                  x="881"
+                  y="201.97"
+                  width="46"
+                  height="147"
+                />
+              </g>
+              <g id="glass">
+                <path
+                  id="the-glass"
+                  class="cls-2"
+                  d="M937,50.47h32a150,150,0,0,1,150,150v150a150,150,0,0,1-150,150H937a0,0,0,0,1,0,0v-450A0,0,0,0,1,937,50.47Z"
+                />
+                <g id="reflection">
+                  <polygon
+                    id="reflection-2"
+                    data-name="reflection"
+                    class="cls-3"
+                    points="1118.65 242.41 1029.8 214.06 1030.18 191.64 1119.03 219.99 1118.65 242.41"
+                  />
+                  <polygon
+                    id="reflection-3"
+                    data-name="reflection"
+                    class="cls-3"
+                    points="1118.65 275.35 1029.8 247 1030.18 224.58 1119.03 252.94 1118.65 275.35"
+                  />
+                </g>
+              </g>
+              <path
+                id="top-body"
+                class="cls-4"
+                d="M920,34h25a86,86,0,0,1,86,86V431a86,86,0,0,1-86,86H920a10,10,0,0,1-10-10V44a10,10,0,0,1,10-10Z"
+              />
+              <g id="head-lights">
+                <g id="lights">
+                  <path
+                    id="bottom-light"
+                    class="cls-5 light"
+                    d="M1193.68,388l467.26-137.43a12.52,12.52,0,0,1,16.06,12V537.4a12.53,12.53,0,0,1-16.06,12L1193.68,412C1181.7,408.46,1181.7,391.48,1193.68,388Z"
+                  />
+                  <path
+                    id="top-light"
+                    class="cls-6 light"
+                    d="M1193.68,138,1660.94.52a12.52,12.52,0,0,1,16.06,12V287.4a12.53,12.53,0,0,1-16.06,12L1193.68,162C1181.7,158.46,1181.7,141.48,1193.68,138Z"
+                  />
+                </g>
+                <g id="headlights">
+                  <path
+                    id="top-headlight"
+                    class="cls-7"
+                    d="M1188,128h8a8,8,0,0,1,8,8v28a8,8,0,0,1-8,8h-8a4,4,0,0,1-4-4V132A4,4,0,0,1,1188,128Z"
+                  />
+                  <path
+                    id="top-headlight-2"
+                    data-name="top-headlight"
+                    class="cls-7"
+                    d="M1188,378h8a8,8,0,0,1,8,8v28a8,8,0,0,1-8,8h-8a4,4,0,0,1-4-4V382A4,4,0,0,1,1188,378Z"
+                  />
+                </g>
+              </g>
+            </g>
+            <g id="container">
+              <rect
+                id="top-door"
+                class="door"
+                y="71.97"
+                width="235"
+                height="10"
+                transform="rotate(-90 237 71.97)"
+              />
+              <!-- rotate(-90 237 71.97) top-cloesd -->
+              <rect
+                id="bottom-door"
+                class="door"
+                y="472.97"
+                width="235"
+                height="10"
+                transform="rotate(90 237 472.97)"
+              />
+              <!-- rotate(90 237 472.97) bottom cloesd -->
+              <g id="container-body">
+                <rect
+                  class="cls-9"
+                  x="226"
+                  y="33.97"
+                  width="668"
+                  height="483"
+                  rx="10"
+                />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
