@@ -37,15 +37,19 @@ button {
   align-items: center;
   border-radius: 50px;
   border: none;
+  transition: transform 0.5s;
 }
-button:hover {
+button:hover,
+button:active {
   cursor: pointer;
   border: 2px #ccc solid;
+}
+button:active {
+  transform: scale(0.9);
 }
 button:active,
 button:focus {
   outline: none;
-  border: none;
 }
 button span {
   color: #fff;
